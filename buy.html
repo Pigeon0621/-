@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <title>訂購車銀優同款服飾</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff0f5;
+      text-align: center;
+      padding: 40px;
+    }
+    form {
+      background-color: white;
+      padding: 30px;
+      border-radius: 15px;
+      display: inline-block;
+      text-align: left;
+      box-shadow: 0 0 10px #ccc;
+      max-width: 400px;
+      width: 100%;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-size: 1.2em;
+    }
+    input, select {
+      width: 100%;
+      padding: 15px 12px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: 1.5px solid #ccc;
+      font-size: 1.2em;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #ff3366;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #cc0055;
+    }
+  </style>
+</head>
+<body>
+  <h1>填寫訂購資訊</h1>
+  <form action="success.html" method="get">
+    <label for="name">姓名</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="address">地址</label>
+    <input type="text" id="address" name="address" required />
+
+    <label for="email">電子信箱</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="product">選擇商品</label>
+    <select id="product" name="product">
+      <option value="black-tee">黑T</option>
+      <option value="white-shirt">白襯衫</option>
+      <option value="black-hoodie">黑帽T</option>
+    </select>
+
+    <button type="submit">送出訂單</button>
+  </form>
+</body>
+</html>
